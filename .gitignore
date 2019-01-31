@@ -34,12 +34,14 @@ wp-content/*
 # Ignore everything in the "plugins" directory, except the plugins you
 # specify (see the commented-out examples for hints on how to do this.)
 wp-content/plugins/*
+!wp-content/plugins/index.php
 #!wp-content/plugins/your-plugin
 
 
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/themes/*
+!wp-content/themes/index.php
 #!wp-content/themes/your-theme
 #wp-content/themes/your-theme/node_modules
 
