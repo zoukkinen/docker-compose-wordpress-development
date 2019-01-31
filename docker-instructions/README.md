@@ -4,7 +4,7 @@
 
     https://www.docker.com/products/docker-desktop
 
-2. Copy all files from [docker-insructions/plugins](../docker-instructions/plugins) to [wp-content/plugins](../wp-content/plugins) folder
+2. Copy all files from [docker-insructions/plugins](../docker-instructions/plugins) to [wp-content/plugins](../wp-content/plugins) folder you should add the neede plugins to the plugins folder before starting the Docker container. This way the import will work. For example if your export site has ACF, this site needs it too for importing.
 
 3. Copy setting-sample.txt file to the same folder [docker-insructions/](./) and rename it as settings.txt. 
     In this file you can find all important settings for your installation and change them if you wish. 
