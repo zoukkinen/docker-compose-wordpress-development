@@ -1,6 +1,5 @@
-#Initial stuff for wordpress
+# Initial stuff for wordpress
 
-FORCE_RUN_INITIALISATION=false
 SITENAME="Wordpress site"
 SITEURL="http://localhost:8080"
 ADMIN_USER="admin"
@@ -8,19 +7,26 @@ ADMIN_PASSWORD="password"
 ADMIN_EMAIL="example@example.com"
 ACTIVE_THEME_NAME="twentynineteen"
 
-#Use Importer
-IMPORT=true
+# Use Importer
+IMPORT=false
 
-#Importer filename
+# Run the wp-cli script even when you alredy did it once
+FORCE_RUN_INITIALISATION=false
+
+# Importer filename
 IMPORT_FILE_NAME=site.wordpress.latest.xml
 
-#Menu and locations
+# Menu and locations
 MAIN_MENU="main-menu main-menu"
 SEC_MENU="secondary-menu secondary-menu"
 THRD_MENU="third-menu third-menu"
 
-#Homepage
-FRONT_PAGE_SLUG="1"
+# Homepage
+# What to show on the front page
+# posts : Your latest posts (default)
+# page : A static page (see page_on_front)
+SHOW_ON_FRONT="page"
+FRONT_PAGE_SLUG="2"
 PERMALINK_STRUCTURE="/%postname%/"
 
 #Stuff from docker-compose

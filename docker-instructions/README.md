@@ -11,7 +11,7 @@
     There is stuff like, menu assignement, fronpage-settings and so on.
 
 4. If you want the latest import of data, follow these [instructions](../docker-instructions#update-content-importer).
-
+    After you have legit export file set `settings.txt`varable `IMPORT` to `true`
 5. Open repository in commandline
 
 6. Run ```docker-compose up```

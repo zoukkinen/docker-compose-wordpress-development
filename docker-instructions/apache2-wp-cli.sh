@@ -40,22 +40,22 @@ then
 else
     if [ "$FORCE_TIMER" = false ] ; 
     then
-        echo "SH-comment: Waiting system 20s"
+        echo "SH-comment: Waiting system 20 seconds"
         sleep 5s
-        echo "SH-comment: Waiting system 15s"
+        echo "SH-comment: Waiting system 15 seconds"
         sleep 5s
     fi
-    echo "SH-comment: Waiting system 10s"
+    echo "SH-comment: Waiting system 10 seconds"
     sleep 5s
-    echo "SH-comment: Waiting system 5s"
+    echo "SH-comment: Waiting system 5 seconds"
     sleep 1s
-    echo "SH-comment: Waiting system 4s"
+    echo "SH-comment: Waiting system 4 seconds"
     sleep 1s
-    echo "SH-comment: Waiting system 3s"
+    echo "SH-comment: Waiting system 3 seconds"
     sleep 1s
-    echo "SH-comment: Waiting system 2s"
+    echo "SH-comment: Waiting system 2 seconds"
     sleep 1s
-    echo "SH-comment: Waiting system 1s"
+    echo "SH-comment: Waiting system 1 seconds"
     sleep 1s
     echo "SH-comment: Starting install"
     sleep 1s
@@ -104,12 +104,19 @@ else
     echo "SH-comment: Menu assigning complete"
     echo ""
 
-    echo "SH-comment: Setting Front Page"
-    sleep 2s
-    /usr/local/bin/wp option update page_on_front $FRONT_PAGE_SLUG
-    /usr/local/bin/wp option update show_on_front page
-    echo "SH-comment: Front Page Set"
-    echo ""
+    if [ "$SHOW_ON_FRONT" = "page" ] ;
+    then
+        echo "SH-comment: Setting Front Page"
+        sleep 2s
+        /usr/local/bin/wp option update page_on_front $FRONT_PAGE_SLUG
+        /usr/local/bin/wp option update show_on_front $SHOW_ON_FRONT
+        echo "SH-comment: Front Page Set"
+        echo ""
+    else
+        echo "SH-comment: Setting Front Page as Blogs"
+        /usr/local/bin/wp option update page_on_front ""
+        /usr/local/bin/wp option update show_on_front $SHOW_ON_FRONT
+    fi
 
     echo "SH-comment: Setting permalink structure"
     sleep 2s
