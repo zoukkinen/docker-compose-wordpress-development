@@ -1,0 +1,35 @@
+# Copyright (C) 2018 
+# This file is distributed under the same license as the  package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wp-export-menus\n"
+"POT-Creation-Date: 2018-03-21 17:18+0530\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: wp-export-menus.php:54
+msgid "Navigation Menu Items"
+msgstr ""
+
+#: wp-export-menus.php:58
+msgid "Date range:"
+msgstr ""
+
+#: wp-export-menus.php:59
+msgid "Start date:"
+msgstr ""
+
+#: wp-export-menus.php:61 wp-export-menus.php:66
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: wp-export-menus.php:64
+msgid "End date:"
+msgstr ""
