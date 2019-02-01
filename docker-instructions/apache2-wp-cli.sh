@@ -145,6 +145,9 @@ else
     sleep 2s
     /usr/local/bin/wp option update permalink_structure $PERMALINK_STRUCTURE
     echo ""
+    echo "SH-comment: Update Font Page"
+    /usr/local/bin/wp post update $FRONT_PAGE_SLUG
+    echo ""
 
     sleep 2s
     echo "Completion-file created" > /var/www/html/compose-complete.txt
