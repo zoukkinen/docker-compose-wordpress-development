@@ -40,6 +40,7 @@ then
 else
     if [ "$FORCE_TIMER" = false ] ; 
     then
+        sleep 5s
         echo "SH-comment: Waiting system 20 seconds"
         sleep 5s
         echo "SH-comment: Waiting system 15 seconds"
@@ -123,6 +124,15 @@ else
         /usr/local/bin/wp option update show_on_front $SHOW_ON_FRONT
     fi
 
+    if [ "$DO_SEARCH_REPLACE" = true ] ; 
+    then
+        echo "SH-comment: Changing url:s to localhost" 
+        sleep 2s
+        /usr/local/bin/wp search-replace $OLD_SITE_NAME $SITEURL
+        /usr/local/bin/wp search-replace $OLD_SITE_NAME2 $SITEURL
+        §echo ""
+    fi
+    
     echo "SH-comment: Setting permalink structure"
     sleep 2s
     /usr/local/bin/wp option update permalink_structure $PERMALINK_STRUCTURE

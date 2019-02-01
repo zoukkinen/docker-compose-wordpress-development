@@ -19,6 +19,13 @@ FORCE_RUN_INITIALISATION=false
 # Importer filename
 IMPORT_FILE_NAME=site.wordpress.latest.xml
 
+# Do you want to do search replace
+DO_SEARCH_REPLACE=false
+
+# Old site url ("http://example.com" remove the last "/" If you want only one change, use same url in both site-name areas)
+OLD_SITE_NAME="http://example.com"
+OLD_SITE_NAME2="http://example.dev"
+
 # Menu and locations
 MAIN_MENU="main-menu main-menu"
 SEC_MENU="secondary-menu secondary-menu"
