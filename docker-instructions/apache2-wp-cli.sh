@@ -66,6 +66,14 @@ else
     /usr/local/bin/wp core install --url="$SITEURL" --title="$SITENAME" --admin_user=$ADMIN_USER --admin_password=$ADMIN_PASSWORD --admin_email="$ADMIN_EMAIL"
     echo ""
 
+    if [ "$RUN_CUSTOM_WP_CLI" = true ] ; 
+    then
+        echo "SH-comment: Run Custom wp-cli command"
+        sleep 2s
+        /usr/local/bin/$CUSTOM_WP_CLI
+        echo ""
+    fi
+
     echo "SH-comment: Theme update starting"
     sleep 2s
     /usr/local/bin/wp theme update --all
