@@ -7,6 +7,9 @@ ADMIN_PASSWORD="password"
 ADMIN_EMAIL="example@example.com"
 ACTIVE_THEME_NAME="twentynineteen"
 
+# List the wordpress.org hosted plugins you want to install to the site. (slug1 slug2)
+PLUGINS="better-search-replace classic-editor wordpress-importer wordpress-seo wp-export-menus"
+
 # Use Importer
 IMPORT=false
 

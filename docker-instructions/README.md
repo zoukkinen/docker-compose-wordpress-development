@@ -4,11 +4,11 @@
 
     https://www.docker.com/products/docker-desktop
 
-2. Copy all files from [docker-insructions/plugins](../docker-instructions/plugins) to [wp-content/plugins](../wp-content/plugins) folder. You should add the neede plugins to the [wp-content/plugins](../wp-content/plugins) folder before starting the Docker container. This way the import will work for sure. For example if your export site has ACF, this site needs it too for importing.
-
-3. Copy setting-sample.txt file to the same folder [docker-insructions/](./) and rename it as settings.txt. 
+2. Copy setting-sample.txt file to the same folder [docker-insructions/](./) and rename it as settings.txt. 
     In this file you can find all important settings for your installation and change them if you wish. 
     There is stuff like, menu assignement, fronpage-settings and so on.
+
+3. Add the slug of all plugins you need to run your site to the settings.txt PLUGINS part. You should add the neede plugins to the file before starting the Docker container. This way the import will work for sure. For example if your export site has ACF, this site needs it too for importing. Always include the `wp-export-menus` and `wordpress-importer` to get navigation and importer to function.
 
 4. If you want the latest import of data, follow these [instructions](../docker-instructions#update-content-importer).
     After you have legit export file set `settings.txt`varable `IMPORT` to `true`

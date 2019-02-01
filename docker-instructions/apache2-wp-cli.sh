@@ -77,6 +77,11 @@ else
     /usr/local/bin/wp theme list
     echo ""
 
+    echo "SH-comment: Plugin install starting"
+    sleep 2s
+    /usr/local/bin/wp plugin install $PLUGINS
+    echo ""
+
     echo "SH-comment: Plugin update starting"
     sleep 2s
     /usr/local/bin/wp plugin update --all
