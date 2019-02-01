@@ -146,7 +146,7 @@ else
     /usr/local/bin/wp option update permalink_structure $PERMALINK_STRUCTURE
     echo ""
     echo "SH-comment: Update Font Page"
-    /usr/local/bin/wp post update $FRONT_PAGE_SLUG
+    /usr/local/bin/wp post update $FRONT_PAGE_SLUG --post_modified=""
     echo ""
 
     sleep 2s
