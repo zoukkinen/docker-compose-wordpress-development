@@ -16,10 +16,6 @@
 
 6. Run ```docker-compose up```
 
-        OBS!!
-        If you run in to problems on Windows (wp-cli can't run anything) check that the settings.txt and apache2-wp-cli.sh are saved in LF  - End Of Line Sequnce.
-        You can do this on Visual Studio Code and change the End Of Line Sequnce from the lower right (it says CRLF) cahnge it to LF and save the file again
-
 7. After everything You get the login info and commet: **SH-comment: Complete**, you can Control+C the terminal
 
 8. To start the terminal on the background use command:
