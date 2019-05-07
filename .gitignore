@@ -23,7 +23,7 @@ node_modules/
 
 # Docker instructions files are in git, except your local settings.txt file 
 !docker-instructions/
-docker-instructions/settings.txt
+docker-instructions/settings.sh
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
