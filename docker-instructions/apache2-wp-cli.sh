@@ -1,5 +1,5 @@
 #!/bin/bash
-source /var/www/html/tmp/settings.txt
+source /var/www/html/tmp/settings.sh
 FORCE_TIMER=false
 
 if [ "$FORCE_RUN_INITIALISATION" = true ] ; 
@@ -173,7 +173,7 @@ else
     if [ "$FORCE_RUN_INITIALISATION" = true ] ; 
     then
         echo "SH-comment: FORCE RUN STILL VALID!"
-        echo "SH-comment: REMEMBER TO REMOVE IT FROM settings.txt"    
+        echo "SH-comment: REMEMBER TO REMOVE IT FROM settings.sh"    
         sleep 10s
     fi
     echo ""

@@ -4,14 +4,14 @@
 
     https://www.docker.com/products/docker-desktop
 
-2. Copy setting-sample.txt file to the same folder [docker-insructions/](./) and rename it as settings.txt. 
+2. Copy setting-sample.txt file to the same folder [docker-insructions/](./) and rename it as settings.sh. 
     In this file you can find all important settings for your installation and change them if you wish. 
     There is stuff like, menu assignement, fronpage-settings and so on.
 
-3. Add the slug of all plugins you need to run your site to the settings.txt PLUGINS part. You should add the neede plugins to the file before starting the Docker container. This way the import will work for sure. For example if your export site has ACF, this site needs it too for importing. Always include the `wp-export-menus` and `wordpress-importer` to get navigation and importer to function.
+3. Add the slug of all plugins you need to run your site to the settings.sh PLUGINS part. You should add the neede plugins to the file before starting the Docker container. This way the import will work for sure. For example if your export site has ACF, this site needs it too for importing. Always include the `wp-export-menus` and `wordpress-importer` to get navigation and importer to function.
 
 4. If you want the latest import of data, follow these [instructions](../docker-instructions#update-content-importer).
-    After you have legit export file set `settings.txt`varable `IMPORT` to `true`
+    After you have legit export file set `settings.sh`varable `IMPORT` to `true`
 5. Open repository in commandline
 
 6. Run ```docker-compose up```
@@ -65,7 +65,7 @@ mariaDB:
 # Update content importer: 
 
 1. Go to your production or staging site and under tools you can export a file. Check first that you have `wp-export-menus`-plugin installed to also get the menus Put this file in the [docker-insructions/](./) (this) folder and save it on it's own name and dublicate as  `yoursite.wordpress.latest.xml`
-    You can change the name in `settings.txt` file.
+    You can change the name in `settings.sh` file.
 
 2. Delete yor local environment with command: `docker-compose down --volumes`
 
