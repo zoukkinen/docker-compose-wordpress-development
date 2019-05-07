@@ -21,7 +21,7 @@ node_modules/
 !docker-compose.yml
 !wp-content/
 
-# Docker instructions files are in git, except your local settings.txt file 
+# Docker instructions files are in git, except your local settings.sh file 
 !docker-instructions/
 docker-instructions/settings.sh
 
