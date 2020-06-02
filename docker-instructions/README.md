@@ -61,6 +61,10 @@ mariaDB:
 ---
 ---
 
+# Additional PHP settings to Wordpress
+
+In this folder you can find the `uploads.ini`-file that you may use if you need to adjust the php settings like `upload_max_filesize`
+To use the settings, just uncomment the line in `docker-compose.yml` file that is mentioned in the `uploads.ini`-file.
 
 # Update content importer: 
 

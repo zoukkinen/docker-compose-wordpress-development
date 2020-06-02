@@ -31,6 +31,8 @@ services:
        # add shared volume
        - wp_data:/var/www/html:rw
        - ./docker-instructions:/var/www/html/tmp:rw
+       #- ./docker-instructions/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+
 
    phpmyadmin:
      image: phpmyadmin/phpmyadmin
