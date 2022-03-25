@@ -36,6 +36,7 @@ then
     echo ""
     echo "*********************************************"
     echo "SH-comment: Complete"
+    sh /usr/local/bin/wp-cli-multidomain.sh
     sleep 1000d
 else
     if [ "$FORCE_TIMER" = false ] ; 
@@ -181,6 +182,6 @@ else
     echo ""
     echo "SH-comment: Setup complete"
     echo "*********************************************"
-
+    sh /usr/local/bin/wp-cli-multidomain.sh
     sleep 1000d
 fi

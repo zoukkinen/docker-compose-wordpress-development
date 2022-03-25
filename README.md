@@ -14,10 +14,13 @@ This repo has folowing setup:
 
     wordpress-cli
 
-`.gitignore` file is in a big role and it includes the main information how this setup work. 
+`.gitignore` file is in a big role and it includes the main information how this setup work.
 
 To publish new content to the server, just push stuff in the wp-content folder.
 
 To install the Docker-compose set follow these [installation instructions](./docker-instructions). And start developing.
 
-In the docker-instructions folder you can save the neccessary plugins that you hos on the live site, but don't want to be pushed to the server. 
+In the docker-instructions folder you can save the neccessary plugins that you hos on the live site, but don't want to be pushed to the server.
+
+### Gitpod startup
+To use Gitpod, just sign in to Gitpod and start the project. Or use the Gitpod Chrome-extention.

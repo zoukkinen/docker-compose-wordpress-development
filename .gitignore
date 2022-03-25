@@ -17,16 +17,21 @@ node_modules/
 #Ignore Apple file system files
 **/.DS_Store
 
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
 # Ignore everything in the root except the "wp-content" and few root files.
 /*
 !.gitignore
 !.gitattributes
 !docker-compose.yml
+!.gitpod.yml
 !wp-content/
 
-# Docker instructions files are in git, except your local settings.sh file 
+# Docker instructions files are in git
 !docker-instructions/
-docker-instructions/settings.sh
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
