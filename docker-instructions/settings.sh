@@ -43,6 +43,7 @@ PERMALINK_STRUCTURE="/%postname%/"
 PHPMYADMIN_COMPOSE="http://localhost:8181"
 MARIADB_PORT_COMPOSE="32000"
 
-# Custom WP-cli command yyou wish to run. Note:  /docker-instructions folder is mapped as /tmp in wp-cli
+# Custom WP-cli command you wish to run. Note:  /docker-instructions folder is mapped as /tmp in wp-cli
+# To run more complex wp-cli commands, use wp-cli-multidomain.sh-file
 RUN_CUSTOM_WP_CLI=false
 CUSTOM_WP_CLI="wp plugin install /var/www/html/tmp/plugins/your-purchased-plugin.zip"
